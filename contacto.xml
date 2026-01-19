@@ -6,7 +6,10 @@
 1.4 Modifica el document per que pugui emmagatzemar 2 contactes.
 1.5 Afegeix un atribut que ens indiqui si un contacte es un familiar o no, i si una direcció es el
 domicili principal o no.-->
-<libreta_contactos>
+<libreta_contactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="contacto.xsd"
+>
+    
 <contacto es_familiar="si">
     <edad>34</edad>
     <nombre>Dario</nombre>

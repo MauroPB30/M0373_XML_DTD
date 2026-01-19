@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libreta_contactos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contacto" 
+                minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="edad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"></xs:minInclusive>
+                                        <xs:maxInclusive value="200"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                        </xs:sequence>
+                        <xs:attribute name="es_familiar">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="si"></xs:enumeration>
+                                    <xs:enumeration value="no"></xs:enumeration>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>   
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
