@@ -1,0 +1,74 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE Grupos_deportes SYSTEM "Grupo_Deportes.dtd">
+
+<Grupos_deportes>
+
+    <grupo id="primero">
+        <nombre>Deportivo Tapitas</nombre>
+        <tipo>Futbol</tipo>
+        <ubicacion>Colombia</ubicacion>
+
+        <integrantes>
+            <jugador class="1">
+                <nombre>Alex</nombre>
+                <apellido>Mendoza</apellido>
+                <f_principal>Delantero</f_principal>
+                <f_secundaria>Lateral ofensivo</f_secundaria>
+            </jugador>
+            <jugador class="2">
+                <nombre>Lautaro</nombre>
+                <apellido>Asprilla</apellido>
+                <f_principal>Defensa</f_principal>
+                <f_secundaria>Mediocampista</f_secundaria>
+            </jugador>
+            <jugador class="3">
+                <nombre>Felipe</nombre>
+                <apellido>Perez</apellido>
+                <f_principal>Volante ofensivo</f_principal>
+                <f_secundaria>Lateral Izquierdo</f_secundaria>
+            </jugador>
+        </integrantes>
+
+        <datos>
+            <director>Alonso Martinez</director>
+            <preparador>Daniel Bejarano</preparador>
+            <victorias>82</victorias>
+            <derrotas>23</derrotas>
+        </datos>
+    </grupo>
+
+    <grupo id="segundo">
+        <nombre>Sindrome de DAW</nombre>
+        <tipo>Voleibol</tipo>
+        <ubicacion>España</ubicacion>
+
+        <integrantes>
+            <jugador class="1">
+                <nombre>Alejandra</nombre>
+                <apellido>Ortiz</apellido>
+                <f_principal>Frente central</f_principal>
+                <f_secundaria>Delantero Izquierdo</f_secundaria>
+            </jugador>
+            <jugador class="2">
+                <nombre>Laura</nombre>
+                <apellido>Castro</apellido>
+                <f_principal>Lateral Izquierdo</f_principal>
+                <f_secundaria>Media Espalda</f_secundaria>
+            </jugador>
+            <jugador class="3">
+                <nombre>Clara</nombre>
+                <apellido>Contreras</apellido>
+                <f_principal>Volante ofensivo</f_principal>
+                <f_secundaria>Lateral Izquierdo</f_secundaria>
+            </jugador>
+        </integrantes>
+
+        <datos>
+            <director>Isabel Contreras</director>
+            <preparador>Carolina Lopez</preparador>
+            <victorias>35</victorias>
+            <derrotas>5</derrotas>
+        </datos>
+    </grupo>
+
+</Grupos_deportes>

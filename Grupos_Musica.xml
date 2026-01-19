@@ -1,0 +1,47 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE Grupos_musica SYSTEM "Grupo_Musica.dtd">
+
+<Grupos_musica>
+
+    <grupo numero_integrantes="5" genero_principal="rock">
+        <nombre>ACDC</nombre>
+        <genero>Rock</genero>
+        <web>https://www.acdc.com/home/</web>
+
+        <integrantes>
+            <integrante id="1">
+                <nombre>Brian</nombre>
+                <apellido>Johnson</apellido>
+            </integrante>
+            <integrante id="2">
+                <nombre>Angus</nombre>
+                <apellido>Young</apellido>
+            </integrante>
+        </integrantes>
+
+        <conciertos>150</conciertos>
+        <fans>159400000</fans>
+    </grupo>
+
+    <grupo numero_integrantes="5" genero_principal="classic">
+        <nombre>Binomio de Oro</nombre>
+        <genero>Vallenato</genero>
+        <web>https://www.youtube.com/@binomiodeorooficial</web>
+
+        <integrantes>
+            <integrante id="1">
+                <nombre>Jean Carlos</nombre>
+                <apellido>Centeno</apellido>
+            </integrante>
+            <integrante id="2">
+                <nombre>Israel</nombre>
+                <apellido>Romero</apellido>
+            </integrante>
+        </integrantes>
+
+        <conciertos>250</conciertos>
+        <conciertos>300</conciertos>
+        <fans>20400000</fans>
+    </grupo>
+
+</Grupos_musica>

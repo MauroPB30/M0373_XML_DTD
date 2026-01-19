@@ -1,0 +1,26 @@
+<!ELEMENT libreta_contactos (contacto+)>
+<!ELEMENT contacto (edad?, nombre, apellidos,telefonos,email?,direccion)>
+<!ATTLIST contacto es_familiar (si|no) #REQUIRED>
+<!-- Si quiero indicar que es cualquier valor coloco CDATA sin parentesis donde esta primero|segundo -->
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT apellidos (apellido+)>
+<!ELEMENT apellido (#PCDATA)>
+<!ATTLIST apellido order (uno|dos) #REQUIRED>
+
+<!ELEMENT telefonos (fijo,movil)>
+<!ELEMENT fijo (#PCDATA)>
+<!ELEMENT movil (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT direccion (calle, numero, piso?,puerta?,cp,ciudad)>
+<!ATTLIST direccion domicilio (principal|secundaria) #REQUIRED>
+
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ELEMENT puerta (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>

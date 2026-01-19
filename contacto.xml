@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE libreta_contactos SYSTEM "contacto.dtd">
+<!-- Crear un document en XML vàlid amb la informació d’un únic contacte.
+1.2 Modela como a mínim la següent informació:
+1.3 Modifica el document afegir la següent informació:
+1.4 Modifica el document per que pugui emmagatzemar 2 contactes.
+1.5 Afegeix un atribut que ens indiqui si un contacte es un familiar o no, i si una direcció es el
+domicili principal o no.-->
+<libreta_contactos>
+<contacto es_familiar="si">
+    <edad>34</edad>
+    <nombre>Dario</nombre>
+    <apellidos>
+        <apellido order="uno"> Patiño</apellido>
+        <apellido order="dos"> Blanco</apellido>
+    </apellidos>
+    <telefonos>
+        <fijo>937449559</fijo>
+        <movil>671510410</movil>
+    </telefonos>
+    <email>
+        DarioP@correo.com
+    </email>
+    <direccion domicilio="principal">
+        <calle>C/ Pelai</calle>
+        <numero>12</numero>
+        <piso>2</piso>
+        <puerta>23</puerta>
+        <cp>08920</cp>
+        <ciudad>Barcelona</ciudad>
+    </direccion>
+</contacto>
+
+<contacto es_familiar="no">
+    <edad>34</edad>
+    <nombre> Mauricio</nombre>
+    <apellidos>
+        <apellido order="uno"> Patiño</apellido>
+        <apellido order="dos"> Blanco</apellido>
+    </apellidos>
+    <telefonos>
+        <fijo>937444559</fijo>
+        <movil>671519810</movil>
+    </telefonos>
+    <email>
+        MauricioP@correo.com
+    </email>
+    <direccion domicilio="secundaria">
+        <calle>c\ Pelai</calle>
+        <numero>12</numero>
+        <piso>2</piso>
+        <puerta>23</puerta>
+        <cp>08920</cp>
+        <ciudad>Barcelona</ciudad>
+    </direccion>
+</contacto>
+</libreta_contactos>

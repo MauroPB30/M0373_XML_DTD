@@ -1,0 +1,18 @@
+<!ELEMENT Grupos_musica (grupo+)>
+
+<!ELEMENT grupo (nombre, genero+, web?, integrantes, conciertos*, fans)>
+<!ATTLIST grupo numero_integrantes CDATA #REQUIRED>
+<!ATTLIST grupo genero_principal (rock|pop|trap|classic) #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+
+<!ELEMENT integrantes (integrante+)>
+<!ELEMENT integrante (nombre, apellido)>
+<!ATTLIST integrante id CDATA #REQUIRED>
+
+<!ELEMENT apellido (#PCDATA)>
+
+<!ELEMENT conciertos (#PCDATA)>
+<!ELEMENT fans (#PCDATA)>

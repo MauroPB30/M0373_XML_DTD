@@ -1,0 +1,23 @@
+<!ELEMENT Grupos_deportes (grupo+)>
+
+<!ELEMENT grupo (nombre, tipo, ubicacion, integrantes, datos)>
+<!ATTLIST grupo id CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+
+<!ELEMENT integrantes (jugador+)>
+
+<!ELEMENT jugador (nombre, apellido, f_principal, f_secundaria*)>
+<!ATTLIST jugador class CDATA #REQUIRED>
+
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT f_principal (#PCDATA)>
+<!ELEMENT f_secundaria (#PCDATA)>
+
+<!ELEMENT datos (director, preparador*, victorias?, derrotas?)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT preparador (#PCDATA)>
+<!ELEMENT victorias (#PCDATA)>
+<!ELEMENT derrotas (#PCDATA)>
