@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<libro ediciones="15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="libro.xsd">
-    <titulo>El señor de los anillos</titulo>
-    <escritores> 
+<libro  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="libro.xsd">
+    <titulo ediciones="15">El señor de los anillos</titulo>
+    <escritores>
         <escritor>J.RR.Tolkien</escritor>
     </escritores>
     <publicacion>2015-05-08</publicacion>
     <generos>
-    <genero>fantaastico</genero>
-    <genero>aventuras</genero>
-    <genero>romance</genero>
+        <genero>fantaastico</genero>
+        <genero>aventuras</genero>
+        <genero>romance</genero>
     </generos>
 </libro>

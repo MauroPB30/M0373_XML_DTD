@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="libro">
-        
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo"></xs:element>
+                <xs:element name="escritores">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="escritor"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="publicacion"></xs:element>
+                <xs:element name="generos">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="genero"></xs:element>
+                            <xs:element name="genero"></xs:element>
+                            <xs:element name="genero"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
