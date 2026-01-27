@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="musica.xsd">
+    <nombre>Alkolirycoz</nombre>
+    <genero>rap</genero>
+    <contacto>
+        <email>Alkolirycoz.col@gmail.com</email>
+        <facebook>https://www.facebook.com/alcolirykoz</facebook>
+        <instagram>https://www.instagram.com/alcolirykoz/</instagram>
+        <x>https://x.com/alcolirykoz</x>
+    </contacto>
+    <web>https://alcolirykoz.com/</web>
+    <integrantes>
+        <integrante funcion="vocalista">
+            <nombre>Gambeta</nombre>
+            <edad>40</edad>
+        </integrante>
+    </integrantes>
+
+</musica>
