@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="musica.xsd">
-    <nombre>Alkolirycoz</nombre>
-    <genero>rap</genero>
-    <contacto>
-        <email>Alkolirycoz.col@gmail.com</email>
-        <facebook>https://www.facebook.com/alcolirykoz</facebook>
-        <instagram>https://www.instagram.com/alcolirykoz/</instagram>
-        <x>https://x.com/alcolirykoz</x>
-    </contacto>
-    <web>https://alcolirykoz.com/</web>
-    <integrantes>
-        <integrante funcion="vocalista">
-            <nombre>Gambeta</nombre>
-            <edad>40</edad>
-        </integrante>
-    </integrantes>
-
+    <grupo name="1">
+        <nombre>Alkolirycoz</nombre>
+        <genero>rap</genero>
+        <contacto>
+            <email>press@crushmusic.com</email>
+            <facebook>https://www.facebook.com/GreenDay/</facebook>
+            <instagram>https://www.instagram.com/greenday</instagram>
+            <x>https://x.com/greenday</x>
+        </contacto>
+        <web>https://greenday.com/</web>
+        <integrantes>
+            <integrante funcion="vocalista">
+                <nombre>Billie Joe Armstrong</nombre>
+                <edad>53</edad>
+            </integrante>
+            <integrante funcion="bajo">
+                <nombre>Mike Dirnt</nombre>
+                <edad>53</edad>
+            </integrante>
+            <integrante funcion="bateria">
+                <nombre>Tré Cool</nombre>
+                <edad>53</edad>
+            </integrante>
+        </integrantes>
+    </grupo>
+        <grupo name="2">
+        <nombre>Soda Estereo</nombre>
+        <genero>pop</genero>
+        <contacto>
+            <email>tour@sodastereo.com</email>
+            <facebook>https://www.facebook.com/sodastereo/?locale=es_ES</facebook>
+            <instagram>https://www.instagram.com/sodastereo</instagram>
+            <x>https://x.com/sodastereo</x>
+        </contacto>
+        <web>https://sodastereo.com/</web>
+        <integrantes>
+            <integrante funcion="vocalista">
+                <nombre>Gustavo Cerati</nombre>
+                <edad>55</edad>
+            </integrante>
+            <integrante funcion="bajo">
+                <nombre>Zeta Bosio</nombre>
+                <edad>68</edad>
+            </integrante>
+            <integrante funcion="bateria">
+                <nombre>Charly Alberi</nombre>
+                <edad>62</edad>
+            </integrante>
+        </integrantes>
+    </grupo>
 </musica>
