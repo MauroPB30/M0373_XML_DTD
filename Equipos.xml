@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Equipos.xsd">
+
+    <equipo>
+        <nombreEquipo>DevMasters</nombreEquipo>
+        <tipoTrabajo>desarrollo de software</tipoTrabajo>
+        <directorEquipo>Carlos Perez</directorEquipo>
+
+        <resultados>
+            <año valor="2023">
+                <exitos>5</exitos>
+                <fracasos>2</fracasos>
+            </año>
+            <año valor="2024">
+                <exitos>7</exitos>
+                <fracasos>1</fracasos>
+            </año>
+        </resultados>
+
+        <integrantes>
+            <integrante>
+                <nombre>Ana</nombre>
+                <apellido>Lopez</apellido>
+                <cargo>Programador</cargo>
+                <fechaNacimiento>1995-06-12</fechaNacimiento>
+                <imagen>imagenes/ana.png</imagen>
+                <ultimaHoraInicio>08:30:00</ultimaHoraInicio>
+                <ultimaFechaInicio>2024-11-10</ultimaFechaInicio>
+
+                <estadisticas>
+                    <programasRealizados>12</programasRealizados>
+                    <erroresCorregidos>30</erroresCorregidos>
+                </estadisticas>
+            </integrante>
+
+            <integrante>
+                <nombre>Mario</nombre>
+                <apellido>Gomez</apellido>
+                <cargo>Analista</cargo>
+                <fechaNacimiento>1990-03-22</fechaNacimiento>
+                <imagen>imagenes/mario.png</imagen>
+                <ultimaHoraInicio>09:00:00</ultimaHoraInicio>
+                <ultimaFechaInicio>2024-11-12</ultimaFechaInicio>
+
+                <estadisticas>
+                    <programasRealizados>8</programasRealizados>
+                    <erroresCorregidos>18</erroresCorregidos>
+                </estadisticas>
+            </integrante>
+        </integrantes>
+
+    </equipo>
+
+</equipos>

@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="musica.xsd">
+
     <grupo name="1">
-        <nombre>Alkolirycoz</nombre>
-        <genero>rap</genero>
+        <nombre>Green Day</nombre>
+        <genero>pop</genero>
         <contacto>
             <email>press@crushmusic.com</email>
             <facebook>https://www.facebook.com/GreenDay/</facebook>
             <instagram>https://www.instagram.com/greenday</instagram>
             <x>https://x.com/greenday</x>
         </contacto>
-        <web>https://greenday.com/</web>
+        <web>https://www.greendayofficial.com</web>
         <integrantes>
             <integrante funcion="vocalista">
                 <nombre>Billie Joe Armstrong</nombre>
-                <edad>53</edad>
+                <edad>52</edad>
             </integrante>
             <integrante funcion="bajo">
                 <nombre>Mike Dirnt</nombre>
-                <edad>53</edad>
+                <edad>51</edad>
             </integrante>
             <integrante funcion="bateria">
-                <nombre>Tré Cool</nombre>
-                <edad>53</edad>
+                <nombre>Tre Cool</nombre>
+                <edad>50</edad>
             </integrante>
         </integrantes>
     </grupo>
-        <grupo name="2">
+
+    <grupo name="2">
         <nombre>Soda Estereo</nombre>
         <genero>pop</genero>
         <contacto>
@@ -35,7 +37,7 @@
             <instagram>https://www.instagram.com/sodastereo</instagram>
             <x>https://x.com/sodastereo</x>
         </contacto>
-        <web>https://sodastereo.com/</web>
+        <web>https://www.sodastereooficial.com</web>
         <integrantes>
             <integrante funcion="vocalista">
                 <nombre>Gustavo Cerati</nombre>
@@ -46,9 +48,10 @@
                 <edad>68</edad>
             </integrante>
             <integrante funcion="bateria">
-                <nombre>Charly Alberi</nombre>
+                <nombre>Charly Alberti</nombre>
                 <edad>62</edad>
             </integrante>
         </integrantes>
     </grupo>
+
 </musica>

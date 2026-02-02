@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="equipos">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="equipo" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="nombreEquipo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3" />
+                                        <xs:maxLength value="20" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="tipoTrabajo" type="xs:string" />
+                            <xs:element name="directorEquipo" type="xs:string" />
+
+                            <xs:element name="resultados">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="año" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="exitos">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="0" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="fracasos">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="0" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="valor" type="xs:integer"
+                                                    use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="integrantes">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="integrante" minOccurs="1"
+                                            maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                    <xs:element name="nombre">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="3" />
+                                                                <xs:maxLength value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="apellido">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="3" />
+                                                                <xs:maxLength value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="cargo">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="3" />
+                                                                <xs:maxLength value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="fechaNacimiento">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:date">
+                                                                <xs:maxExclusive value="2000-01-01" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="imagen" type="xs:string" />
+                                                    <xs:element name="ultimaHoraInicio"
+                                                        type="xs:time" />
+                                                    <xs:element name="ultimaFechaInicio"
+                                                        type="xs:date" />
+
+                                                    <xs:element name="estadisticas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element
+                                                                    name="programasRealizados"
+                                                                    type="xs:integer" />
+                                                                <xs:element name="erroresCorregidos"
+                                                                    type="xs:integer" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

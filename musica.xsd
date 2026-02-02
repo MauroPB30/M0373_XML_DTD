@@ -1,52 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="musica">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="grupo" maxOccurs="unbounded">
+
+                <xs:element name="grupo" minOccurs="2" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombre"></xs:element>
-                            <xs:element name="genero"></xs:element>
+
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="5"/>
+                                        <xs:maxLength value="25"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="genero" minOccurs="0" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="rap"/>
+                                        <xs:enumeration value="pop"/>
+                                        <xs:enumeration value="folk"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
                             <xs:element name="contacto">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="email"></xs:element>
-                                        <xs:element name="facebook"></xs:element>
-                                        <xs:element name="instagram"></xs:element>
-                                        <xs:element name="x"></xs:element>
+                                        <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xs:element name="facebook" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="instagram" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="x" type="xs:string" minOccurs="0"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="web"></xs:element>
+
+                            <xs:element name="web" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
                             <xs:element name="integrantes">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="integrante" maxOccurs="unbounded">
+
+                                        <xs:element name="integrante" minOccurs="1" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="nombre"></xs:element>
-                                                    <xs:element name="edad"></xs:element>
+
+                                                    <xs:element name="nombre">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:minLength value="2"/>
+                                                                <xs:maxLength value="30"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="edad">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="5"/>
+                                                                <xs:maxInclusive value="150"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
                                                 </xs:sequence>
+
                                                 <xs:attribute name="funcion" use="required">
                                                     <xs:simpleType>
                                                         <xs:restriction base="xs:string">
-                                                            <xs:enumeration value="vocalista"></xs:enumeration>
-                                                            <xs:enumeration value="bajo"></xs:enumeration>
-                                                            <xs:enumeration value="bateria"></xs:enumeration>
+                                                            <xs:enumeration value="vocalista"/>
+                                                            <xs:enumeration value="bajo"/>
+                                                            <xs:enumeration value="bateria"/>
                                                         </xs:restriction>
                                                     </xs:simpleType>
                                                 </xs:attribute>
+
                                             </xs:complexType>
                                         </xs:element>
+
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
+
                         </xs:sequence>
-                        <xs:attribute name="name" use="required"></xs:attribute>
+
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+
                     </xs:complexType>
                 </xs:element>
+
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
 </xs:schema>
